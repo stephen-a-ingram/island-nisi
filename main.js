@@ -47,9 +47,6 @@ const player = {
         // Create Player
         player.sprite = game.physics.add.sprite(100, 450, 'player');
         player.sprite.body.setSize(player.sprite.width, player.sprite.height-12);
-        //player.sprite.setBounce(0.5);
-        //player.sprite.setImmovable(true);
-        // player.sprite.setCollideWorldBounds(true);
 
         // Create hitbox for player
         player.actionHitbox = game.physics.add.sprite(0, 0, 'npc').setOrigin(0, 0);
@@ -260,7 +257,6 @@ function preload ()
 
 function create()
 {
-    //this.add.image(0, 0, 'bg').setOrigin(0, 0);
     this.map = this.add.tilemap('level1');
     var tileset = this.map.addTilesetImage('terrain_atlas','gameTiles');
     walls1 = this.map.createDynamicLayer('Walls-1', tileset);
