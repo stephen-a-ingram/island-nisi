@@ -249,7 +249,6 @@ function preload ()
 {
     this.load.image('player', 'assets/sprites/player.png');
     this.load.image('npc', 'assets/sprites/npc.png');
-    //this.load.image('bg', 'assets/sprites/bg.png');
 
     this.load.image('gameTiles', 'assets/sprites/terrain_atlas.png');
     this.load.tilemapTiledJSON('level1', 'assets/tilesets/island-nisi.json');
