@@ -273,6 +273,7 @@ function create()
     ground = this.map.createStaticLayer('Foreground', tileset);
 
     this.cameras.main.startFollow(player.sprite);
+    this.cameras.main.setRoundPixels(true);
 
 
     // Create cursors
