@@ -273,6 +273,7 @@ function create()
     ground = this.map.createStaticLayer('Foreground', tileset);
 
     this.cameras.main.startFollow(player.sprite);
+    // Need this to prevent black lines between tiles when scrolling
     this.cameras.main.setRoundPixels(true);
 
 
