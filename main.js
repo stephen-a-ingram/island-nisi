@@ -112,6 +112,11 @@ const player = {
         {
             player.sprite.setVelocityY(0);
         }
+
+        if (cursors.shift.isDown)
+        {
+            player.collider.active = !player.collider.active;
+        }
     },
     update: function(){
         player.handleInput();
@@ -284,7 +289,7 @@ function create()
     this.physics.add.collider(player.sprite, npc.sprite);
 
 
-    this.physics.add.collider(walls, player.sprite);
+    player.collider = this.physics.add.collider(walls, player.sprite);
     this.physics.add.collider(walls, npc.sprite);
 
     // Handle overlap
