@@ -270,6 +270,8 @@ function create()
     dialog.create(this);
     debug.create(this);
 
+    ground = this.map.createStaticLayer('Foreground', tileset);
+
     this.cameras.main.startFollow(player.sprite);
 
 
